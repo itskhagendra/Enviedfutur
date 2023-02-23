@@ -1,0 +1,25 @@
+body{
+    background-image: Url("../Images/Background.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+div{
+    width: 100%;
+    margin-top: 40vh;
+    text-align: center;
+}
+.Bold
+{
+    font-weight: 900;
+    font-size: 7em;
+    font-style: black;
+    font-variant: black;;
+
+}
+.light
+{
+    font-weight: 100;
+    font-size: 6.8em;
+}

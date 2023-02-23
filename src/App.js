@@ -1,4 +1,5 @@
+import ComingSoon from "./Components/ComingSoon";
 const App =() =>{
-  return <div>Hello World!</div>
+  return <ComingSoon/>
 };
 export default App;
