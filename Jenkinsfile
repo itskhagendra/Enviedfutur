@@ -32,7 +32,7 @@ pipeline {
             steps
             {
                 echo 'starting server'
-                sh './startserver.sh' 
+                sh 'bash startserver.sh' 
                 echo 'Server Strated'
             }
         }
