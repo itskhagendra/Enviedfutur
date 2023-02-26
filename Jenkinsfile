@@ -17,7 +17,6 @@ pipeline {
             steps {
                 sh 'pwd'
                 sh 'ls -ltr'
-                sh 'rm -r node_modules'
                 sh 'npm install' 
             }
         }

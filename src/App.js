@@ -1,6 +1,5 @@
-import ComingSoon from "./Pages/ComingSoon";
 import Home from "./Pages/Home";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 const App =() =>{
   return (
     // <BrowserRouter>
