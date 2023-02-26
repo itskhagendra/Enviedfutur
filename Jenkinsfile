@@ -14,8 +14,6 @@ pipeline {
             steps {
                 sh 'pwd'
                 sh 'ls -ltr'
-
-                sh '--loglevel=verbose'
                 sh 'npm install' 
             }
         }
