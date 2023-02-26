@@ -1,5 +1,5 @@
 pipeline {
-    
+    agent any
     // agent {
     //     docker {
     //         image 'node:18.14.2-alpine' 
