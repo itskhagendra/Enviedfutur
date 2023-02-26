@@ -14,6 +14,8 @@ pipeline {
             steps {
                 sh 'pwd'
                 sh 'ls -ltr'
+                sh 'sudo chown -R 130:137 "/.npm"'
+                sh '--loglevel=verbose'
                 sh 'npm install' 
             }
         }
