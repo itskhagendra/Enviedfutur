@@ -1,0 +1,50 @@
+.JumoContainer{
+    height:"800px" !important;
+    width:"100%" !important;
+    background-color:'blue';
+}
+.Jumbo
+{
+    background-image:"Images/Model1.jpeg"
+
+}
+.TextLogoStyle
+{
+    background: -webkit-linear-gradient(#9ed66f, #32985e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.TextGradient
+{
+    background: linear-gradient(135deg, rgba(158,214,111,1) 0%, rgba(50,152,94,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: right;
+    padding-bottom: 30px;
+    
+}
+.Message
+{
+    font-weight: 100px;
+    font-size: 18px;
+    text-align: right;
+    color: #535f6a;
+}
+
+.ComingSoombtn
+{
+    margin: 5% 0%;
+    height: 50px;
+    width: 200px;
+    border-radius: 15px;
+    display: block;
+    position:relative;
+    float: right;
+    background: linear-gradient(135deg, rgba(158,214,111,1) 0%, rgba(50,152,94,1) 100%);
+   
+
+}
+.ComingSoombtn p{
+    color: white;
+    font-size: 1.3em;
+}
