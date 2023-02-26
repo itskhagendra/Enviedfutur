@@ -14,7 +14,7 @@ pipeline {
             steps {
                 sh 'pwd'
                 sh 'ls -ltr'
-                sh 'chown -R 130:137 "/.npm"'
+
                 sh '--loglevel=verbose'
                 sh 'npm install' 
             }
