@@ -34,7 +34,7 @@ pipeline {
                 echo 'Stoping All Servers'
                 sh ' pm2 delete all'
                 echo 'starting server'
-                sh 'pm2 start index.js' 
+                sh 'startserver.sh' 
                 echo 'Server Strated'
             }
         }
