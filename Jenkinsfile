@@ -31,8 +31,10 @@ pipeline {
         {
             steps
             {
+                echo 'Stoping All Servers'
+                sh ' pm2 delete all'
                 echo 'starting server'
-                sh 'npm run deploy'
+                sh 'pm2 start index.js' 
                 echo 'Server Strated'
             }
         }
