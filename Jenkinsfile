@@ -13,7 +13,7 @@ pipeline {
     //     nodejs "node"
     // }
     stages {
-        stage('Build') { 
+        stage('prebuild') { 
             steps {
                 sh 'pwd'
                 sh 'ls -ltr'
@@ -21,10 +21,20 @@ pipeline {
                 sh 'npm install' 
             }
         }
-        stage('Deploy')
+        stage('Build')
         {
             steps{
-                sh 'npm start'
+                sh 'npm run build'
+                echo 'Build Completed'
+            }
+        }
+        stage("Deploy")
+        {
+            steps
+            {
+                echo 'starting server'
+                sh 'npm run deploy'
+                echo 'Server Strated'
             }
         }
     }
