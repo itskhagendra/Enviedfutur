@@ -31,8 +31,6 @@ pipeline {
         {
             steps
             {
-                echo 'Stoping All Servers'
-                sh ' pm2 delete all'
                 echo 'starting server'
                 sh 'startserver.sh' 
                 echo 'Server Strated'
