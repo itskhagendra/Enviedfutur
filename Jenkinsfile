@@ -14,7 +14,7 @@ pipeline {
             steps {
                 sh 'pwd'
                 sh 'ls -ltr'
-                sh 'npm install' 
+                sh 'sudo npm install' 
             }
         }
     }
