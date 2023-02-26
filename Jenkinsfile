@@ -32,7 +32,6 @@ pipeline {
             steps
             {
                 echo 'starting server'
-                sh 'npm run deploy'
                 echo 'Server Strated'
             }
         }
