@@ -47,6 +47,7 @@ pipeline {
     stages {
         stage("Test") {
             steps {
+                sh 'bash startserver.sh' 
                 bash '''
                     #!/bin/bash
                     echo "Trying to run Docker Container"
