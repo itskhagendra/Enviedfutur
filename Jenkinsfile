@@ -48,11 +48,6 @@ pipeline {
         stage("Test") {
             steps {
                 sh 'bash startserver.sh' 
-                bash '''
-                    #!/bin/bash
-                    echo "Trying to run Docker Container"
-                    docker run -d -p 80:3000 testnode
-                '''
             }
         }
     }
