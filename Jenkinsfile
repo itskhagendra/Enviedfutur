@@ -27,6 +27,12 @@ pipeline {
                 echo 'Build Completed'
             }
         }
+        stage('Install Pm2')
+        {
+            steps{
+                sh 'sudo npm install pm2 -g'
+            }
+        }
         stage("Deploy")
         {
             steps
