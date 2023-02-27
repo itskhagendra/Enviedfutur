@@ -1,5 +1,10 @@
 pipeline {
-    agent any
+    dockerfile {
+            filename "Dockerfile"
+            args '-p 3000:80'
+            additionalBuildArgs "-t testnode:latest"
+        }
+    // agent any
     // agent {
     //     docker {
     //         image 'node:18.14.2-alpine' 
@@ -38,7 +43,8 @@ pipeline {
             steps
             {
                 echo 'starting server'
-                sh 'bash startserver.sh' 
+                //sh 'bash startserver.sh' 
+                sh 'docker run -d testnode'
                 echo 'Server Strated'
             }
         }
