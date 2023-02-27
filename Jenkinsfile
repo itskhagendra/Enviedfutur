@@ -39,7 +39,7 @@ pipeline {
             {
                 echo 'starting server'
                 //sh 'bash startserver.sh' 
-                sh 'docker run -d testnode'
+                sh 'docker run -d mtestnode'
                 echo 'Server Strated'
             }
         }
