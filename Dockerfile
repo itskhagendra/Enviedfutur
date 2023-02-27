@@ -9,7 +9,7 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 
 RUN node --version
-run npm --verison
+RUN npm --verison
 # RUN npm install
 # If you are building your code for production
 RUN npm i --only=production
