@@ -1,7 +1,6 @@
 pipeline {
     dockerfile {
             filename "Dockerfile"
-            args '-p 3000:80'
             additionalBuildArgs "-t testnode:latest"
         }
     // agent any
@@ -22,7 +21,7 @@ pipeline {
             steps {
                 sh 'pwd'
                 sh 'ls -ltr'
-                sh 'npm install' 
+                sh 'npm install --production' 
             }
         }
         stage('Build')
@@ -30,12 +29,6 @@ pipeline {
             steps{
                 sh 'npm run build'
                 echo 'Build Completed'
-            }
-        }
-        stage('Install Pm2')
-        {
-            steps{
-                sh 'sudo npm install pm2 -g'
             }
         }
         stage("Deploy")
