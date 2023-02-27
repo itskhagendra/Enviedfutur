@@ -47,7 +47,11 @@ pipeline {
     stages {
         stage("Test") {
             steps {
-                sh "npm --version" // this command gets executed inside the container
+                bash '''
+                    #!/bin/bash
+                    echo "Trying to run Docker Container"
+                    docker run -d -p 80:3000 testnode
+                '''
             }
         }
     }

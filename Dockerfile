@@ -12,7 +12,8 @@ RUN node --version
 RUN npm --version
 # RUN npm install
 # If you are building your code for production
-RUN npm i --only=production
+RUN npm ci --only=production
+RUN npm run build
 
 # Bundle app source
 COPY . .
