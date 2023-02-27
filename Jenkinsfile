@@ -2,7 +2,7 @@ pipeline {
     agent {
         dockerfile {
             filename "Dockerfile"
-            additionalBuildArgs "-t mtestnode:latest"
+            additionalBuildArgs "-t testnode:latest"
         }
     }
     // agent any
@@ -39,7 +39,7 @@ pipeline {
             {
                 echo 'starting server'
                 //sh 'bash startserver.sh' 
-                sh 'docker run -d mtestnode'
+                sh 'docker run -d testnode'
                 echo 'Server Strated'
             }
         }
