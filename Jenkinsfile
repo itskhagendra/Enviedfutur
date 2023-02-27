@@ -1,8 +1,10 @@
 pipeline {
-    dockerfile {
+    agent {
+        dockerfile {
             filename "Dockerfile"
-            additionalBuildArgs "-t testnode:latest"
+            additionalBuildArgs "-t mtestnode:latest"
         }
+    }
     // agent any
     // agent {
     //     docker {
