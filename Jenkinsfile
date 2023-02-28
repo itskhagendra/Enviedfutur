@@ -50,7 +50,7 @@ pipeline {
                 sh '''#!/bin/bash
                         echo "Hello ${SHELL}!"
                     '''
-                sh 'bash startserver.sh' 
+                //sh 'bash startserver.sh' 
             }
         }
     }
