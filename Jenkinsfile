@@ -47,6 +47,9 @@ pipeline {
     stages {
         stage("Test") {
             steps {
+                sh '''#!/bin/bash
+                        echo "Hello ${SHELL}!"
+                    '''
                 sh 'bash startserver.sh' 
             }
         }
