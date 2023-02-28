@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/bin/bash
 
 echo "Trying to run Docker Container"
 docker run testnode
