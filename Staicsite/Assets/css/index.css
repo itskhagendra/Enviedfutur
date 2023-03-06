@@ -1,0 +1,143 @@
+body{
+    font-family: 'Noto Sans', sans-serif;
+}
+p,li,span{
+    font-size: 1.5em;
+}
+
+.nav-link
+{
+    font-size: 1em;
+}
+.JumoContainer{
+    padding: 15vh 0;
+    background-color:'blue';
+}
+.Jumbo
+{
+    background-image:"Images/Model1.jpeg"
+
+}
+.about
+{
+    background-color: aliceblue;
+    padding: 5% 0%;
+}
+.earth
+{
+    background-image:linear-gradient(45deg,
+    rgba(245,70,66, 0.85),
+    rgba(8,83,156, 0.75)), url(/Assets/images/earthBG.jpg);
+    background-size: cover;
+    color: white;
+}
+.aboutbg
+{
+    width: 100%;
+    height: auto;
+}
+.moto
+{
+    padding: 5% 0;
+    font-weight: 600;
+    font-size: 3vw;
+    font-weight: 600;
+}
+.about p{
+    font-size: 1.5em;
+    padding-bottom: 50px;
+}
+.bold
+{
+    font-weight: 900;
+}
+
+
+.header{
+    padding: 2% 0%;
+    text-transform: uppercase;
+	background: linear-gradient(to right, #30CFD0 0%, #c70ab7 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font-size: 8vw;
+    font-weight: 700;
+}
+.text-logo{
+    width:60%;
+    text-align:right;
+    margin-left:5vw;
+    padding-bottom:20px"
+}
+.TextLogoStyle
+{
+    background: -webkit-linear-gradient(#9ed66f, #32985e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    vertical-align: middle;
+}
+.TextGradient
+{
+    background: linear-gradient(135deg, rgba(158,214,111,1) 0%, rgba(50,152,94,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 5em;
+    padding-bottom: 30px;
+    
+}
+.Message
+{
+    font-weight: 100px;
+    font-size: 18px;
+    text-align: right;
+    color: #535f6a;
+}
+
+.ComingSoombtn
+{
+    margin: 5% 0%;
+    height: 50px;
+    width: 200px;
+    border-radius: 15px;
+    display: block;
+    position:relative;
+    float: right;
+    background: linear-gradient(135deg, rgba(158,214,111,1) 0%, rgba(50,152,94,1) 100%);
+   
+
+}
+.ComingSoombtn p{
+    color: white;
+    font-size: 1.3em;
+}
+
+/* common */
+.ribbon {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+  }
+  .ribbon::before,
+  .ribbon::after {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    display: block;
+    border: 5px solid #2980b9;
+  }
+  .ribbon span {
+    position: absolute;
+    display: block;
+    width: 225px;
+    padding: 15px 0;
+    background-color: #3498db;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    color: #fff;
+    font: 700 18px/1 'Lato', sans-serif;
+    text-shadow: 0 1px 1px rgba(0,0,0,.2);
+    text-transform: uppercase;
+    text-align: center;
+  }
