@@ -1,6 +1,11 @@
 body{
     font-family: 'Noto Sans', sans-serif;
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
+body::-webkit-scrollbar {
+    display: none;
+  }
 p,li,span{
     font-size: 1.5em;
 }
@@ -17,6 +22,18 @@ p,li,span{
 {
     background-image:"Images/Model1.jpeg"
 
+}
+.TeamTitle
+{
+    text-align: center;
+    padding: 20% 0;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+}
+.TeamTitle h2
+{
+    font-size: 5rem;
 }
 .about
 {
