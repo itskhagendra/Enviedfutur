@@ -3,6 +3,9 @@ body{
     -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
+pre {
+    white-space: pre-wrap;
+  }
 body::-webkit-scrollbar {
     display: none;
   }
@@ -31,7 +34,7 @@ p,li,span{
     font-weight: 600;
     font-size: 40px;
 }
-.TeamTitle h2
+.TeamTitle> h2
 {
     font-size: 5rem;
 }
@@ -39,6 +42,24 @@ p,li,span{
 {
     background-color: aliceblue;
     padding: 5% 0%;
+}
+.aboutus > h2{
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 5%;
+    font-weight: 600;
+}
+.aboutus 
+{
+    padding: 10% 0 10% 0;
+} 
+.team  h1{
+    text-align: center;
+    padding: 5% 0 10% 0;
+}
+.team
+{
+    padding-bottom: 5%;
 }
 .earth
 {
